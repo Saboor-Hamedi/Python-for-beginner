@@ -55,17 +55,26 @@ print(remove_item)
 # if do not especify, will remove the last item
 remove_item.pop()
 print(remove_item)
-
 # loop list 
 loop_list = ['mike', 'john', 'tom', 'smit', 'nouha', 'megelo']
 print(loop_list)
 for x in loop_list:
-    print(x, end=', ')
-
+    print(x, end=',')
 # loop through the index number 
 for i in range(len(loop_list)):
     print(i)
-
+# join lists 
+list1 = ['Book', 'Pencil', 'Pen']
+list2 = ['Pencil case', 'Book cover', 'Book Page number']
+print(list1)
+print(list2)
+print('After joining lists')
+for x in list2:
+    list1.append(x)
+print(list1)
+# count item
+count_item = list1.count('Pencil') # item must be in the list, also it should not be nore then 1 item
+print(count_item)
 
 
 
