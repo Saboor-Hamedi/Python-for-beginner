@@ -76,6 +76,22 @@ print(list1)
 count_item = list1.count('Pencil') # item must be in the list, also it should not be nore then 1 item
 print(count_item)
 
-
-
-
+# this is a comment
+"""
+In general, the built-in slice() creates a slice object that can be used anywhere a slice
+is allowed
+"""
+my_slice = [1,2,3,4,5,6,7]
+a = slice(2,4)
+print(my_slice[a])
+# get more info about slice 
+print(a.start)
+print(a.step)
+print(a.stop)
+# map slice 
+s= 'HelloSaboor'
+a.indices(len(s))
+for i in range(*a.indices(len(s))):
+    print(s[i])
+del my_slice[a]
+print(my_slice[a], 'has deleted')
